@@ -55,5 +55,58 @@
 
   
 
+
+
+
+
+// const robot = {
+//   wheels: 4,
+//   name: "roberto",
+//   serialNumber: 123,
+//   coords: {
+//     x: 0,
+//     y: 0,
+//   },
+//   weight: 40,
+// };
+
+//  let obj = {}
   
-  
+// function omitMethod(robot) {
+//    obj.name = robot.name;
+//    obj.serialNumber = robot.serialNumber
+//    return obj
+// }
+
+// omitMethod(robot);
+// console.log(obj);
+
+// robot.omit(["coords", "wheels", "weight"]) ===
+//   {
+//     name: "roberto",
+//     serialNumber: 123,
+//   };
+
+// console.log(robot);
+
+
+
+class Robot {
+  constructor(name) {
+    this.name = name;
+    this.x = 0;
+    this.y = 0;
+  }
+  goRight() {
+    return  this.y = -1;
+  }
+  goLeft() {}
+  goForward() {}
+  goBack() {}
+
+}
+
+
+const robot1 = new Robot('Roberto');
+robot1.goRight()
+console.log(robot1);
